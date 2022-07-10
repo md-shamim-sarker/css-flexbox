@@ -11,15 +11,16 @@ ul {
     display: flex;
     gap: 5px;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 li {
-    width: fit-content;
+    width: auto;
     height: fit-content;
-    padding: 20px;
+    padding: 20px 30px;
     font-size: xx-large;
     color: white;
 }
@@ -29,5 +30,5 @@ li:nth-child(odd) {
 }
 
 li:nth-child(even) {
-    background-color: blue;
+    background-color: green;
 }
