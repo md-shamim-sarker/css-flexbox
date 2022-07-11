@@ -14,13 +14,36 @@ body {
 header {
     width: 100vw;
     height: 25vh;
-    background-color: blue;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
 }
 
 menu {
     width: 100vw;
     height: 5vh;
-    background-color: red;
+    background-color: black;
+}
+
+menu ul {
+    height: 5vh;
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+menu ul li a:hover {
+    color: rgb(88, 85, 85);
 }
 
 main {
@@ -37,19 +60,28 @@ footer {
 }
 
 .left-aside {
-    width: 25%;
+    width: 15%;
     height: 100%;
     background-color: antiquewhite;
+    padding: 20px;
+
+}
+
+.left-aside ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .main-content {
-    width: 50%;
+    width: 70%;
     height: 100%;
     background-color: rgb(105, 64, 10);
 }
 
 .right-aside {
-    width: 25%;
+    width: 15%;
     height: 100%;
     background-color: rgb(83, 65, 42);
 }
