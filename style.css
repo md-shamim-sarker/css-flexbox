@@ -1,34 +1,55 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
-ul {
+body {
     width: 100vw;
     height: 100vh;
-    list-style: none;
-    display: flex;
-    gap: 5px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+    background-color: aqua;
+    overflow: hidden;
 }
 
-li {
-    width: auto;
-    height: fit-content;
-    padding: 20px 30px;
-    font-size: xx-large;
-    color: white;
+header {
+    width: 100vw;
+    height: 25vh;
+    background-color: blue;
 }
 
-li:nth-child(odd) {
+menu {
+    width: 100vw;
+    height: 5vh;
     background-color: red;
 }
 
-li:nth-child(even) {
-    background-color: green;
+main {
+    width: 100vw;
+    height: 50vh;
+    background-color: blueviolet;
+    display: flex;
+}
+
+footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+}
+
+.left-aside {
+    width: 25%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.main-content {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(105, 64, 10);
+}
+
+.right-aside {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(83, 65, 42);
 }
